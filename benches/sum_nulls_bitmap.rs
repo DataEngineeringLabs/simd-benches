@@ -4,7 +4,7 @@ use simd_benches::bitmap_ops;
 use simd_benches::sum_nulls_bitmap::*;
 
 fn close(l: f32, r: f32) {
-    assert!((l - r).abs() < l * 0.0001);
+    assert!((l - r).abs() < l * 0.001);
 }
 
 fn add_benchmark(c: &mut Criterion) {
