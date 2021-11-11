@@ -47,8 +47,8 @@ naive_sum bitmap 2^20 f32      [1.7633 ms 1.7736 ms 1.7855 ms]
 
 ### Conclusions so far:
 
-* for non-null sums, it is advantageous to use SIMD
-* for sums with nulls, it is not advantageous to use SIMD
+* for non-null sums, it is advantageous (by 10%) to use SIMD
+* for sums with nulls, it is not advantageous (by 50%) to not use SIMD
 
 ## License
 
