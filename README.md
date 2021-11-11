@@ -2,7 +2,7 @@
 
 This repository contains benchmarks for common vertical and horizontal operations that
 leverage SIMD, comparing different implementations of the same algorithms
-in them using `packed_simd2` and `core_simd`.
+in them using `packed_simd2`, `core_simd` and Rust arrays.
 
 Things implemented:
 
@@ -47,8 +47,8 @@ naive_sum bitmap 2^20 f32      [1.7633 ms 1.7736 ms 1.7855 ms]
 
 ### Conclusions so far:
 
-* for non-null sums, it is advantageous (by 10%) to use SIMD
-* for sums with nulls, it is not advantageous (by 50%) to not use SIMD
+* for non-null sums, it is advantageous (by 10%) to use `packed` or `core`
+* for sums with nulls, it is advantageous (by 50%) to use arrays
 
 ## License
 
