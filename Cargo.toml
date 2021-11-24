@@ -21,3 +21,7 @@ harness = false
 [[bench]]
 name = "sum_nulls_bitmap"
 harness = false
+
+[[bench]]
+name = "take"
+harness = false
