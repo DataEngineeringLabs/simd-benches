@@ -51,6 +51,20 @@ nonsimd_sum bitmap 2^20 f32    [541.78 us 545.16 us 549.09 us]
 naive_sum bitmap 2^20 f32      [1.6740 ms 1.6922 ms 1.7149 ms]
 ```
 
+### Take of values
+
+```
+core_simd_take 2^20 f32 time:   [911.13 us 912.21 us 913.33 us]
+naive_take 2^20 f32     time:   [912.39 us 915.22 us 918.41 us]
+```
+
+### Nullable take of values (`Bitmap`)
+
+```
+core_simd_take_nulls 2^20 f32   time:   [950.40 us 954.08 us 958.88 us]
+naive_take_nulls 2^20 f32       time:   [2.3714 ms 2.3968 ms 2.4296 ms]
+```
+
 ## Bench results on default
 
 Command: 
