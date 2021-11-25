@@ -25,3 +25,7 @@ harness = false
 [[bench]]
 name = "take"
 harness = false
+
+[[bench]]
+name = "take_nulls_bitmap"
+harness = false
