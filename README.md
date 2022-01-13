@@ -52,6 +52,15 @@ nonsimd_sum bitmap 2^20 f32    [541.78 us 545.16 us 549.09 us]
 naive_sum bitmap 2^20 f32      [1.6740 ms 1.6922 ms 1.7149 ms]
 ```
 
+### Min of values
+
+```
+core_simd_min 2^20 f32     [376.98 us 378.40 us 379.72 us]
+packed_simd_min 2^20 f32   [181.77 us 182.95 us 185.05 us]
+nonsimd_min 2^20 f32       [185.89 us 186.35 us 186.83 us]
+naive_min 2^20 f32         [2.0208 ms 2.0274 ms 2.0341 ms]
+```
+
 ## Bench results on default
 
 Command: 
