@@ -9,6 +9,7 @@ Things implemented:
 * sum of values
 * sum of nullable values where nulls are represented as `Vec<bool>`
 * sum of nullable values where nulls are represented as `Bitmap`
+* min of values
 
 Algorithms implemented:
 
@@ -83,6 +84,15 @@ naive_sum null 2^20 f32       [1.6418 ms 1.6520 ms 1.6660 ms]
 core_simd_sum bitmap 2^20 f32  [929.95 us 936.31 us 943.64 us]
 nonsimd_sum bitmap 2^20 f32    [454.78 us 462.08 us 471.82 us]
 naive_sum bitmap 2^20 f32      [1.7633 ms 1.7736 ms 1.7855 ms]
+```
+
+### Min of values
+
+```
+core_simd_min 2^20 f32     [286.86 us 289.22 us 292.03 us]
+packed_simd_min 2^20 f32   [230.50 us 234.12 us 238.86 us]
+nonsimd_min 2^20 f32       [245.75 us 249.19 us 254.00 us]
+naive_min 2^20 f32         [2.8560 ms 2.8721 ms 2.8885 ms]
 ```
 
 ### Conditions
